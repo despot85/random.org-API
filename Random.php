@@ -122,20 +122,7 @@ class Random
         return $ret;
     }
     
-    /**
-     * 
-     * @return array
-     */
-    public function getSviBrojeviIUcestalost()
-    {
-        $ret = [];
-        $ucestalost = $this->getUcestalost();
-        foreach ($this->brojevi as $broj) {
-            $ret[$broj] = $ucestalost[$broj];
-        }
-        return $ret;
-    }
-        
+    
     public function ucitaj()
     {
         $odgovor = $this->posaljiZahtev();
